@@ -24,7 +24,7 @@ logo =[
     "\n - Get ISP"
     "\n - Get latitude & longitude"
     "\n==================================================================="
-    
+
     ]   
    
 width = os.get_terminal_size().columns
@@ -37,8 +37,10 @@ while True:
  1. If you want IP details
  2. If you want to exit
  """)
-
+    
     choice = input("What do you want?: ")
+
+    print(" ")
 
     if not choice.isdigit():
         print("Please enter numbers only!")
@@ -64,12 +66,20 @@ while True:
             print("Invalid IP address! Try again.")
             continue
 
+       
+        print("\n=========ip information=========")
         print("IP:", data.get("query"))
+        print(" ")
         print("Country:", data.get("country"))
+        print(" ")
         print("City:", data.get("city"))
+        print(" ")
         print("ISP:", data.get("isp"))
+        print(" ")
         print("Latitude:", data.get("lat"))
+        print(" ")
         print("Longitude:", data.get("lon"))
+        print("====================================")
 
     elif choice == '2':
         print("Good bye from our IP checker!")
