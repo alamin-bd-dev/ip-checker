@@ -36,7 +36,7 @@ pip install requests
 ▶ How To Run
 
 Clone the project:
-git clone https://github.com/alamin-bd-dev/ip-checker
+git clone https://github.com/alamincyber/ip-checker
 cd ip-checker
 python Ip cheaker.py
 
